@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main () {
+//Programa para saber los números entre un rango que contengan cierto dígito
+int num=0, n1=0, n2=0, multiplo=0;
+
+cout << "Ingrese un número para saber sus múltiplos" << endl;
+cin >>  num;
+cout << "Ingrese el límite inferior del rango" << endl;
+cin >> n1;
+cout << "Ingrese el límite superior del rango" << endl;
+cin >> n2;
+cout << "Los múltiplos de: " << num  << " entre " << n1 << " y " << n2 << " son: " << endl;
+for (int i = 1; i < n2; i++) {
+multiplo = num * i;
+if (multiplo <= n2 && multiplo >=n1) {
+ cout << multiplo << endl; 		
+} 
+}
+
+return 0;
+}

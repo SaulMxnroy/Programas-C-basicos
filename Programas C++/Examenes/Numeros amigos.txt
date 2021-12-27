@@ -1,0 +1,30 @@
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+	int n1, n2, i, j, acum1, acum2;
+	cout << "Ingresa el primer número: " << endl;
+	cin >> n1;
+	cout << "Ingresa el segundo número: " << endl;
+	cin >> n2;
+	
+	for (i=1; i <n1; i++) {
+		if (n1 % i == 0) {
+			acum1 = acum1+i;
+		}
+	}
+	for (j=1; j<n2; j++) {
+		if (n2 % j == 0) {
+			acum2=acum2 +j;
+		}
+	}
+	if (acum1 == n2) {
+		cout << "Los números son amigos" << endl;
+	}
+	else {
+		cout << "Los números no son amigos" << endl;
+	}
+	
+	return 0;
+}

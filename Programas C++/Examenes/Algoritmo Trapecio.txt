@@ -1,0 +1,20 @@
+
+using namespace  std;
+int main () {
+	double  bmayor, bmenor, altura, izquierdo, derecho, perimetro, area;
+	cout << "Ingresa base mayor" << endl;
+	cin  >> bmayor;
+	cout << "Ingresa base menor" << endl;   
+	cin >> bmenor; 
+	cout <<  "Ingresa la altura" << endl; 
+	cin >> altura;
+	cout <<  "Ingresa el lado izquierdo" << endl; 
+	cin >> izquierdo;
+	cout << "Ingresa lado derecho" << endl; 
+	cin >> derecho;
+	perimetro = izquierdo + derecho + bmayor + bmenor;
+	area = (bmayor + bmenor) / 2 * altura;
+	cout << "El perimetro del trapecio es: " << perimetro << endl; 
+	cout << "El area del trapecio es: " << area << endl; 
+	return 0;
+}
